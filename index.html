@@ -1,0 +1,376 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Partners</title>
+    <link rel="icon" type="image/x-icon" href="icons8-globe-africa-94.png">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        nav > div > div{
+                border: solid white 1px;
+                border-radius: 5px;
+            }
+
+            nav > div > div > a{
+                color: white !important;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                padding: 8px 16px;
+            }
+
+            nav > div > div > a:hover{
+                color: #0f172b !important;
+                background: white;
+                /*font-weight: bold;*/
+            }
+            nav > div > div:hover{
+                position: relative;
+                top: -5px;
+            }
+
+
+        button {
+    transition: transform 0.5s; 
+  }
+  
+  .btn:active {
+    animation: reduceSize 0.5s forwards;
+  }
+  
+  @keyframes reduceSize {
+    from {
+      transform: scale(1); 
+    }
+    to {
+      transform: scale(0.75); 
+    }
+  }
+  
+    </style>
+</head>
+<body>
+    <header style="background: #0f172b; color: white; padding: 8px 10px; border-radius: 0 0 10px 10px; margin: 2px;">
+        <h1 style="text-align: center; padding: 16px 10px;">
+            Travel Partners
+        </h1>
+        <hr style="background: white;">
+        <br>
+        <nav style="padding-bottom: 3px;">
+              <div style="display: flex; justify-content: space-around;">
+                <div><a style="color: white; font-size: 14px;" href="index.html" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                  </svg> </a></div>
+                <div><a style=" font-size: 14px; text-decoration: none;" href="./Destinos/Machupicchu.html" >Machu Picchu, Perú </a></div>
+                <div><a style=" font-size: 14px; text-decoration: none;" href="./Destinos/Petra.html" >Petra, Jordania</a></div>
+                <div><a style="font-size: 14px; text-decoration: none;" href="./Destinos/Chichen.html" >Chichen Itzá, México</a></div>
+                <div><a style="font-size: 14px; text-decoration: none;" href="./Destinos/Acropolis.html" >La Acrópolis, Grecia</a></div>
+                <div><a style="font-size: 14px; text-decoration: none;" href="./Destinos/Reserva.html" >Reserva Río Claro, Antioquia</a></div>
+                <div><a style=" font-size: 14px; text-decoration: none;" href="./Destinos/Piramides.html" >Las Pirámides de Giza, Egipto</a></div>
+              </div>
+                    
+
+        </nav>
+       
+    </header>
+    <main>
+    <section style="margin: 50px;">
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <div>
+            <img width=300 height="200" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQVFBcUFRUYFxcXGh0eGhgaGSAaGRodGhoaGiIgHRodICwjHR0pIBgdJDYkKS0vMzMzGSI4PjgyPSwyMy8BCwsLDw4PHhISHjUqIik0MjIyMjQyNDQ0NDIyMjI0MjIyMjI1MjIyMjIyLzIyMjIyMjQyMjIyMjIyMjIyMjIyMv/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAIDBAYBB//EAEgQAAIBAwMBBAcEBwUGBgMBAAECEQADIQQSMUEFIlFhBhMycYGRoUKxwfAHFCNSYtHhFTNygpIWJFNjsvFDRFRzk9I0g6MX/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDBAAFBv/EAC4RAAICAQMEAQMDAwUAAAAAAAABAhEDEiExBBNBUWFxobEVMpEigfEFFCNCUv/aAAwDAQACEQMRAD8A9AiugU/bXQta7IDQtdC04CnBaWzhoWnhacFpwWhZxwLTgtdAp4WlbHOBakApAVFqtSltGd5hVZjAJwsTx1yMULOJwKcBVfs/VJdtrctncrDB9xg8+YIq2BS2MICnAV0CnAUoRAU6KVdAoBFFKKdSrjgT6TD/AHS9/gP4V5alqvVfSEf7td/w/wAq86S1WzpnUWZc6uSKq2qeLNXEs1KtmtOslpKIs08WKvrYqRbFDWHQDRYp66aelEhp6saK8iEnE+Ph7qnPLpVopjxapUwW2gccow+BqI6byo4/afTzp5ZbkMY9/XyrPHq35Rrl0PpgI6Jsd054xUZ0p8K0pysDzk9fIVQu2iRFWjmbVkJ4VF1YHbT0w6ejAsYrh09V7pneMCtpqjfTxRxrHlVc6UmjrBoAfqSaifT0fOlCiqOoQVynSA4WwM9iovVUSdarlaV5GFY0eqRXQtSBa6FrJZpoYFroWpAtOC0LDQwLTgtPC04ChYRoWnAUnYAEnAFUtL2pbuX7thZ3WgJOIaeYzPdJAM11nJFx3CgseFBJ9wEmvMO3+3rt20tyNltFCsAxO6TbeTIxkLjy869D7W7RtW7bB3AZkMLyxlf3R0zzx515kjqVgZ/oQDx0oIJo/RrtoWLLpcbBQvbHXfBlMdTgjz3VudDe9ZbRx9pVPzANeUoUfwJUzwJBk5xn7Xzr1LsYfsLX/tr9wpWMi6BThXBThShEK7NZ7WekttLi2wCdxK7ukztwesH7jVDsPWXCTbuPIRiBySfPPTrnx6Urkh9DqzY0qjsnuipKYQH9tibFwfw1h1s1u+1RNlx5Vlks1XHPSiWSNsprZqZLFXUsVOlin7oFApLp/Knrp6uKwyCRjpNca+BBiQetSedIvHppSexGulxNV7vYhcggR5cT8an1GrKkFOOoNPTtI89ajPPRox9NLwAn7McMRBkeNTW1ZZnrRO/q93PWoGYdOtKsra3L9tIlsOozyIOfGpXS3t3GQKqNcEQRVPX6oxsHFNjc29tieRY6t7gz0i9IFsFNiFwzRyBA6nxPwBHj5kbeqmsL6aOS1tYMATMYJ95Cg8dHP+Hx0XZF+bNsnmIPTjHG5o+fy4rXB70YZpGgdhtnx8qjdsY6dTQ97xPw4FMN49SaqkRZa1N4bcGhVyrgdSM1BdcdBREKNwVDAqzcqsTStjUesbadtp0UorPZWjkV0CnRXYrrOobFdAp0V2KFhoz3prcK6bBI3OA0GCVKuSJ84rzzR9om0xa2xe6WLSuSs9C2QT85JNbr9ITf7uqeL7j7gpX6lx9a8xt2gBtAgR4DyHyjr5UGwpGlsac3D3t964R/d2wSF8N7cmJ6kR50Es3O8hkk/QeXGBXr/o7ZCaSwFAH7K2TAiSUBJPifOvH0juSIwPnI8a6PsL9BYsdu4MWUiROYEeZP5Nehdi3WtW7SuS1t7asrn7EqCVJ/dByD0B8ASPOdFcAEEyCPfGSPlxI8q9G7NvTYthhuQIkNby6EAcqB0xkdDBHMl0xd0HxVHtjVG3ad1IlQTB8genX3eVQ6O9B2hgcnujgkfu/uN4oePrWZ9LtXsO0XdpeSUYhXycAdDke1ONsGQSKSWw63AeoYOfXXGFssdxB5BgZAM4OD4/cJtF2uqNFtuSZYxPw6DBOf5gHGa/tVT3dijnkjcs+AUCDyZ67uDg1Xs9oOTPdP8RgcRHxE1nrc0RPauzu1sQcEZzyR88UXva5VXdz58KPe3/evKuw9Vcujugn7PdUR3ciSOfrycdR6H2TeQohPfdR3VUTHw4DeZp4St0JkhSs7rNS3qXuuCFVJiMmT0Wfvz7qDaHtaxcBKuJHKnDCPKr/pH2mRZuAhQPVsWE7mEAESQYU54z7684OtsvEgyDIPBB/xA1qhj1ozynTNzd7atqRCs3nwKl/ty3GAaxSa63t/vD/mEn5Yp47TsjBc+8A/UUzwqjoZN9zQ39erNuj6ffTTq9wiTQBu10CyhDn932SfdzTj2xbBAKsPEhkMfJ5rO+m3s9CPVLTWwba48eMVGjk5nnpVfR9q2WIX1h3HAUq0z8BREbZjrXdtLlHPN/5ZIr4zUiOsT1qFwpqC5RjjiTnmkye44PWqN012xqFcHYwbaSpgzBHIPgaE9t9s27HdctuKyAIHOJ3N3R9fdVopLczyk2ZP0lcNfJG6RjFog+HNxob4AY48aPeif90VCMADM+rW2knou3LHzM/hWN1OpFx92+63J9o3G9+5FXjHNX+x+2EstvYM/mbuzx5XaN2DwxPjSRlU7OlG4noBU1Cymu9l9pLet70VgP4lifceGHuJq1AnIrUpGdookGmFG8KJYqF7nyrrFoH3ENVtlXb17yqqbnlQCGP/APTbcYtbpOG4Hy5+tXtJ+kKywfeuRJUKTLQJjI56V5X+qEBR6u+IPPqrgOSCenjT00j9LWo8ot3MH/Tnk/OvPlrvZmij1Xsr05W6T+zCgZ5yB4Ezz8BRbXelNi2Dkk+PC4EmSTxHWvEl7Ou8eqvg/wDtv0J8V8KeOxNRybV8n/AR59es5poavO4GetL6fac+yjE9ASAD8f6VR1npvcmbfqhbUwXBNwEMARBECenMedebP2VfwP1e7wIj7znBwMdIriXNQiKyW7iowEFVLKQeIKz4fSnimv3AfwbXtvt65dTbc9WAwElZEFd8AT4loOOR5VnbhZQjbQQ4gEEkjBbOOMGhw7RRhDh93kjn8KhXtG6ikFG2Ty6sJkkx3sA+XlRbRyTNPqvSa6yrYLuLaKEEGAQFCwQoBOBGZ6+NCL+sU7Y8VB8METMgfk0Nsa5ftbYMwcDr9f6im6rVW2UgOvHiKLdHUaNtPZW+LiXrSWmUAqGYkEtuJCnpzweuMVtdD6WaQIitcFsqiKbiFdx2R5mRgjIxJ99eQWbyCe+v5+FFuxe0LaPL3ARuBjrA8Jpda9DaH7PSLnpHpys3LiMHM2zs2koDtJDI4Mgjy4rCelvpT6641pHBtg4ZgGwBmWaW+HkPKtX2Lo3uXL62/VuyOm4SAQHtWyJHSYI94IqXUegrXAR6tFkzgiRmTEqQJP3mlnbWx0duTx7UX1wELEACZj2pM7fLjmu6bVQZHwByJ9354r0+9+i9TEsyiOPWLAwBOVnpxNUPRz0W05e3bfa7XEvEqz90G3eFpZIGGIDEZzBIpNLKKQH7K7Qc7AxG0AQogDjwAxAA98VruzO3Ldradm8bJI3dJb7KwI5EfknND6J27ZGx0ABkCQ20n+KJPx4q9d7PW2LYN1EAYjJ5G1xBjpJBz1ApVF2UeRNVRm9b6SDU2btoWxaRLNxpggCBkfX41h7lxLcK1xO8Jwd3SYJUYPkfEV6L6W2I091VdHY2rndRpb2efLMc+NeOtpie/t2rxgT7iMc1V53DZEHjjJW/Bq9D2dcvJvtFWXxmPoYPWrS+jmqz3FP+cYrIKfVlRbDF2MAyRk+Qrf8AZrX0s21a4xYKNxBx+RxT4uplPwS7cb2B/wDs5qv3F/1rSX0f1QOUX/WvHzopqb16JLsPifvIqFrt3n1h+f8AWneSRZYo/JTtdi6pTuVQD5OKnTs/XDjrz31ohpRckEufnV9FM8mhrY2hL2Z8abWhiCfYCkkuoEMWAzP8JoafSO4HK71wQNzEAZHJxwODnFaz9XD3LgYbhtQEHIPtHIP+Kgup9FLbXGYDapAhVVQBAjGOaGqXihXFAXsT0ga2H9lt7BiNxYgtzycY6ZOOaJ6j0mR0UtZS547gYU+RggnP1oHb7AuPKzLhjCsmNoIG6QAevhVfW+j1+2Ja3uAMd3f1+P31LXPgWXJc1S6S45bYBJEgAxyNwAjGPvNXOx7lm0xK2AwLd0qC7AKGUypWVG5lPniJisvfthd0pcDKyj2x1BP2l8vrUdzUs4VNjjaIBBXd848alFyUrSGcpNU6NFo+0rlt7JctNoXPWBpUEOd3QfIEDIotq/SYAdy0zGJ9oc/5QTHyrFNbaBNq50ALMAMYHAHT8Kf/AGXcx+zEATBdsdelUjlmtqJtX/k2lzX33tz6q2FcAbhdBy8AcDqTHxobp9bdW5ChWMsgUuBi3EzHXPu4xQjSaDUW0NxbYRW2kEOxO+YUweMn60POivl9pOTcce1jcUBbocdPhVdcnW1C6UaPtDVaq4hVVVc+0lzPgRNZ652bfJk8+b5++tH2LYuW7ZW4ykA91QsEeORzPu+NTO+aut0ITD9IrE4sW/8A5Sfwp6enGoPsaZD7g7fdWkNyIE5OQATuziYByJpHUH96STAk+/k8+HTk188/9W9R+5r0IAD0t13K6Qf/ABXD+NL/AGn7WbjSqPfZcf8AU9H2vwcgSOIP9fGu/rM8gg+GMz0HifmOaX9Wl4j9zu2jPt2r2xcBX1SqGBBKhFYAjoS8g+dM7LTtKwgtW7Ki2A22Wtd1iZj252zJ4PNaNrxYkLJImTwB78Y454pI/OQTid2AOhG7bk+X/eu/Vcj8I5QSZmdR2d2hd9s2B1wVB+aimXfR7W3F23L1p1B4Zmbx/wCWa1QDgfYwOkj8MeOac+nJ5uLjy4+ZOec/1pf1PI/R2hGRt+gtzMvbz4IT94ANOX0EbrdUf/qH/wBxWrfuZe4AOpP85/pzQvtbt+za4PrGjgMPrBro9dmk6jX8HNRXIPtegydbufK2gj/U1X9P6HKONTeU/wALBSPdC1n29KtQ2LVtVA8EZj9SRVO56VaoY3AEADAAHvgCZ+NW1dVLyjtcDbWPRO2sn1+pM8xd565hM0+56M6blvWt77rfgwrz1vSfVZ/av5Qev1EeUU1vSjWf8ZgPh/KuePqn/wBga4+jcajsrQ28vp3IEd43GgyYxNzOTgcmofR7Q2UsjfpCHLOTuUE7S7lB7UztKiIrKaD0huB/WXHLsCIJAYrjgAmBPBIE+dae36X23EKGVjyWDBR/pJmegE0mR9RFVu/mxoyizR6fT2OlpQf8G2ntprZIIOwgcqFMD3shI91AtL29bI3HzBgwuIJgP3pEkRn2TRX9a3KrjcvgDAPAOecQef6VklmyR2d/yyhX7U07W9PqXW6zxYeEbqREHBC4/wANebXj3QwAYYnOQR1I8POvSO2brHSapQOdO8EHHSPjnp4V5bZ1LKIgAxypAYEDoY5xW/p9U8af1JT5oNdj6pUvW7j7tinMYiQR0GQJ46xXoWmv2ro/Z3Ef3MSfiIkfFa8i02qZmbJM9Tkwf4vH74mrvencuNuQZzPPjg1eOSWLYknTPUH06zAj4dfgQPurjWYz/P8AHisr2B6TFP2d5mKkgK8iVnHeIMles8jPTjZNB4k+cz/1GrRm5bo243CUSFTA/rmnJcptzoMGfh+OKj1OnBRhuI3AglSARIjBM5p3PTyMoauB+luy93ycD/8AlbP3k1S7X7at21YJctm6pBNvcCxEiRtmR3TPTpWfu6jU6ZH2MbtqSC8TdQqdm4qRDDAGPlUn9o2dRpms2LgtMQJ9YcxMtLcktmScmTRUnROUEOsekVlCbsGApQkjarMWRiZC+BMGDJHPWuan0lt3kIS3A5BuFVBjwPeA+MVjrl65ZtwlxSRdbvI4ZSNifaU/1pWu3cFXtqNxksiqHkeEiPoaCckItD/dsSdoajLHMMwhj4jcCJPJBxyeKd2I83BmIHU4+dWrd+xcU+rco/g2VbyJHeHvJjPFd0dw27nsIjdcBufK2cT+8ceJoxabsWeJVszUaXTghQNpySYMznwYj6A1aKCbg8Gjw+wh5+NZy96SMSVW5bTbMSAzOV6YO22p4ySaKaTtJWDMe5vIIDYGUQYbhsg5FXi0+CTxySui5qUAtMvgs/EZH1FBF0w9Zu/jZsT1HkPxonqWBUg5niPpj+dDEOFPWB1np401bk/BZuviqRuVy7dqmb/kPnTWCjdNqdPPs3QCCI7kZ/GnrqLH/OHl+zg++QfGhkxT0uV5suj6deEehDHfKCCmxkftiD4lfwj8mpUazAH7XHJOyT8apW2FTK/vrNPBiXETbj6SElcvyTersxG+8RPDbHkf5p6Y8MDFTfrVoAg+tMn+H7qgDYqpcmf5UYdNCfgGTBhhz+S+mqsAyFuj/RUd7tKwvHrfkh/Ghd5SaotpSaZdHjW7SJ9vE9oxb/uXO07li9y99REQotx8jIoSOxNGT/ear3fs/wCVXF03iasJpvCm/wCPGqiikeihLdr7lBfR7S/8bVDyi3/Kmr6IaMmfWan5W/5UY02mlmB6EfUA/jRJbAArnlrgZdFifj7mc/2L0n/F1Hui3/Kuf7I6Mf8Aiag/C3/KtDuHFdW2OtL3ZDf7HD6+5mx6IaT/AImp+Vv+VWU9GNGCDN8wIz6v5+/+VHGdRVa7qB+TRU5S8Cvo8Mf8lBPR/RgQzXjkZARTjx24PyqVOzNOr7hc1CgfZTYg6fu56U65f/P/AGqF3misd8oR4cS4/IY7P0dq8lzSl7pD2nXewUsFMTBmJ+AFUbf6MtIB/f3j7wh/CrnouP2zH/lv+FahHrTjjGMaow5opS/pMna/RtpgIF+7k/up/Kkf0Z2D/wCZvD3Kk/WtkrVKjUdMOaJaDGL+jKx/6i9H+FK0mh9G0t21T1tx9ojcwEkdJ/PSiqGpkNctMeEFQrgFf7O2z/4tz6fhUtr0ftgzuafcKKrTwaEnGXI6lKPDAFv0SQFj6x+8xbpGfKhGv/RfpbhLB3tuTO5AAZ93H0rdK1SA00dK4ElOT5MToP0fi3zqrlzEd9EOJmPv+dD+0/0S6S6wZbj2j1CKsHzg4B90V6NXaZJCOTezPL7H6HrCHcNVemCAdqyJ6iBzE/Our+iCyP8AzV3x9hOflXp9Ki4ph1SqrPOx+i2311d0/wCVanb9HA/9Ze/0ofvFb2lS9uPoKyzXDMAn6NVHGru/6Lf/ANaav6M0E/73dPvRP5V6DSpkq4FbcuTz8foyt5nU3D/kWoX/AEU2iZ/Wro8tq/yr0alTWxaR4krnrAp6vSt6Ynxq/a7OEZry55qPpYYEQW3NX9Np3enWNIi8kVft3wBCrA8fyKmskpPYacYwXs4NAQM4qrd0tXn1Q8PmahN73fCtDydtbGRYnldtUUP1RvCpB2aT4CrfrvAfOlsZuuPkKyzzSkzVHGoKkVv7Otr7TAnw5NTtZQDw8uprpUJ1E+WT8arXVZsgGhBOT3Z0pUtgfp9X+2vKOmzHhK/0++iBuTyYoJ2bbJ1eqBxAtfHD0Ue34D41pcUnsZceRtX8s65A4+dV3uGpChri6SeaeKhHlnSnOTpIoGfGkLTGiyaMDmrVu2g6U3eiuEJ2pPmVAVNGx8as2+zvGaMo6eFJrw+ysU8Zyn4ozz0Q5dsb2Rp/Vs7eFtvwq2mqqotwhbrTEWmycxx0oTvcHczYHG2OpgYk+X86qlS3Msp6naRphqx41MNWPGKyL37nSCB59ROZ4jr5UxNXcPHM4ESZHkDXaL8na68G2s6s9WHyq1+txWHTX3Jg84EZH5/rTLfbFxrly3nuBAQBMFtxPAngCkcGOpRN/wDrkU9dZ5VihrmIDDdkkAxiI+g8zU2n1l0Egg+rVEO4ZBJLyoPUwF48am40VSizaJqh+TU66gVjV15EZEHoGBORGRyfdV61qbjAEAnjOY+cUttHPDFmm/WBS/WR50Cm6fsn50r9y4iM5BhVJPHQTR1yF7MfYd/Wh4Gl+tDwrPjWyFIuIQzFQdyxKqWMnyCmnWtUxZ13p3GUcjO5VYf9VFTmL2oh/wDWR4UhqfKhgW54r9acpfrH1ru5L2d2ohL9ZHnTlvA0KYt4imDf+8Pu/Ch3Zg7KDXrB40vWDxrLa7tb1UDJ9wMe6SKHn0kbwFMp5HwI8cV5MtbvOcDFXbWncjJ+tRjYcg1YtNHJrM1A9ZZZfU6ECdZ+ZpJqp6VMdpHIriuOkUFOMeDpKU+RtxZH2vgYqFdK5PMD3mfrVo3QIluePkT+Fc9co8SanLLY8IqI63aCdZP8VS/rLfu/MVXOo8Bn5/fXFvPOZ+dKq8jObZbW6RyF+gpw1Pgo++qdp1cBwZBAIPODmmJrlZmtq6yuCsjHwp0l6Jtt+QNpiP1+8TB/ZjjxBSjxvp4VmdNnXXRIzzH+AGMeY+laRdOoE/fVZ1tfpEsbpP6slW7b8Kerr+7+FVb7qqk8eY88fjUGmv7ratzOJJxIJB+40qigyyvgvHVpu2AqCBJHUTT1YGsdrO1jZ1VzugqVWQIBBx1jiAcVpDdgSTiJq+muDNLIpc2XsVwsKo+t86Y1/wA+ePOjb8sk3HwgkLiC3eLcCy/AJPTw8/Cgb6mwEjAxAJVwwPUQ3JB6xVsao27d+4o3FbLkDx4rAXu3LgDEAKSQQyqjMrLuiG2gqpJyR+6IitOOOpGbJOma5BbtSpuTuzBE7Y8z7qs6TtKxbHduLk8TnBDSZzWA1fbF51AfaIwSOc+JMkT5GPnVXv7d4UlR1AkDnmOMA4MfKqON8k1kceD0u56Tae3kMbm7kKCSIwN24gfU1InpAiad9SLZKtdUKpMNMMMwCB7JMgmvL97sAcrPEg8eM9a1lhVbsjvuFi9zzJ33VgfzqOSCSX1RbHkk2/oErfpnbEA2B5kXAflK1duemB/Vjct2lKrdVAjZglLjFpABjuxHnWCTR2mAG4kyCSO80ZxtEQD45/CtNpjaa2NPtLbyjKCQBO1x4A43DHkc0Zxj6Hi5PllpPTy4AAUtLnJAY48lB5jzqDUdvPfbcbt0LggJvURODCiOnNWNT6OW1t72B2AqIwIMMWOBJHAjzPNB7Cqpm2t8KBIMwO7BGJmBukfGpLLiVjvDmdejWdp9rD1ITT6m76wFSN4cbgJBG8gHnMmfZj3AbL3LhIZ3t3BJAcMxDe1043eIB560R7G7NcqLtyW2Dc6nkLBaR1I3YxnvV27phdD3N7JcVZ9Zna+1do3AoAFESDKkATSLJFWvuU0SdN/wZ/QLdvLduMHYWrbFj4d1ufAYPHhXL11RZsHbJPrPtDPfj880/sz19wsLxKh7TgOBPKkGNs7o8M0O7WtsljTK2D+2icEj1qx8YYVbdyok1Ub+AxoO27loSly4rTgEyp6xHBE4z4/LXaL9IFvAvW2HiyZH+kmfzxXl3ZvrDlFZl4JAkfn+dPZLoObbAScbT+HFU0J7MhraVo9l0Xpdorg/vNh8HBH1yPrVlvSDR7kX1qE3DAjIH+I/Z+NeIF2T2lZf8QIB+dWtJqgWG7Pl5e8z91TlhigxzSZ7oHtXBtDq0/uPnicbTPGamS0AI73xJJ+ZM14bZ7RAeQCnmr59/wDSrdvt24oj9Zup1gMYzmfa60rwPwwrMghpNYjO47oVfZbMkRMnw5qhb7QZrlouQgDOHAOI2ptnOck0OS5AicwSRHPx90VEJMcYJ6+Yj6AVNYopmjuyD2u7XNtm2gMgAgkEZkTnrice6l2JrECPvaCXJnJmVU48PdWda2blzpEd4gjgCOvnirZuqkriPfJ46Hiu7caoZZZ3dhbtTWJvssskK5Y4iQEY9fcfnUug7aR1JZSpDR4jyoTdG7bG0gZ5Wcgjgc4JFVdFfKvjaN/QgNkAkHIgGu7caO7sk7NYO1E+7p4xHXzFVND2sqoFuMxeWExPUn6AgVndexWCHydpIAgDdtwI6AffXNMy7zM5ZsAZ9sdSeM9aHbVHPNKwonbIXT+pBKsltQLgMSQVHwxPWh1vVxqVuZ/vEM8n2gT55z86evZbuGADMvtSACfcTJ+VD2w54Xmd8gzPI2r+Zp4peCUpPyXuz9aF1W6cZnp9k46daNp6Qh9+VRQCN/tbeM4Bx3h41knUbyxkDBg4JkeXQ+OKnt21CgMRDEwqtkeZjOYxI6ii4p7gU2lQUt9uO6XJYsO4qtESVLEsRwCcceVVLPaVwvtB7qHA6AvOcRnLePWr2k7O3qBb9+wOsgzJju9YOKiGkG8AtJLeyWXf8Zj7qW026CrpWD+0iS7OeSqnPnJGT4bo+FWbvbN1t2NmQN0ESFZ8ZkHDD6U/U6UNc9XPKIJ56fw+7p4VaTsokMisxHJAHx8ck/OmtJKwU7ZQXtdwIDQNqA5kygjdI6RAielN1mpdLty4rZW51yIZo+HNXW7NVGAUEGMkgLIwD3iIGJ/E1BqNE5JPeCk/Z3MWjzE/jxQ1Rs7S6LfZfaRexqkdi0ae6ZzkDbiYrIa3VG4QVXhRPiYgZrV9l2rds6hijQNNc3TPHdkLuAPTr86y2v1dtiwtKQnTdt3/AOYryfP/ALVpxySRmyRtjtC9sSbveEd1ROT5kMIio7L7TJJIMiOMZ/nVMN/T6057op22+BKQRvavekGIQDaM/wARnnnpMcR4VurmiH9ljTHu3LqWri4Ptm56xuB+6xE1m/Q3sX1yszKCAYzEvMmASpx3egrcaKzbs3ETV7LbG2BbJ70gCMR7PSOnFZ800trtrevJoxQb3eyfkxlvsS0gDnexBGSSAM4ny9+K0fZGlFq9bZ1DgtPdG7auM4HI8Mc9afq7z6lilsKF9WVBgxJwrEYyBPzqnorb6ceqe4ruWMFS6kjjoI5BzNVkpSjTVfkEFFS2lf4DHpJ2grOqozW7SsHJYbQWWCo7wgCQZJFBD2xdZmK3iYXIU2vACMTBO0dPvqp/aTai6ySAloL3ZxMbfiME1zXoRftDZKEW9+2QALhJUGZ6IefGoR6bEo1JJv5LSzTcv6W6PQdfr1t6UNadfWOqgk/Y4JYgRkeHjFAuzuzla3da0ikKNu5pMmFmFJ2zyRzEjwoV23rZsOSXn1atnaF3F0HAH8Ro36Dy+jVgfad56g98rkcdKmoRxxt8WWTcpV5qx3ZeilV3iVtI+7EbiVAIJUDw5B+VBfSXshr+y3aUKlqWlixGVBKhoJkEHk8EVt2uWLZVHdRhgR4F4aMcSATWJ7VQafvvqLsFWFqzuILlWcC5cZQo9XG0gAAtgHGaTHkTyNr+yBlVQSf8gn0Ze5btdxJW4272oIEAeGeKLaXV3TddNrE3CuxQZyqiRk8z4Vd7E0OmSyGu3VtmNxHhifZA5jwrOv6RepuNeskuN21FdVERGSDJznPu8wNlqV0t/kx3KNW9gh2n2bcdWcou63lkuJt3gmAFPVoEAfXOAV61a3qLaupLAMCTiTBwZzNE1/SVqGVluJbuknEqBtEMI7oyRuMGh+m1PrHN1ztyCJ2nA6RukDAAnypY63yqFbjzZa1/Y6W7e+2XNzdHq+e6OTnPUdaEi6RiCPIjNEG7fuW77FX9YhMFWAKAE5A8xjjzzUHaHaC3X3gHIGAJA+vx+NDVNcoZqD3TLdvTGZb5Ax85J+ZqO9ohkhAY5Mkj58mJ8ABFX7V87RcVVAH2hBVQJkqWGT5+XFM/tBbiHcXdVAJHdQNnxAnPv8MeMXNI1qFlG05IhbYBEewsMff9/wAa5c0AYqWk9TByABwfDgkmDAFTapScqsLKk4JOTE7vDHEdKuXyUBItkQAHKLAO0cnBJnaOPfS6t9jtPhlewRtIPdWQO4CAuZggjBMcnmYnmh1qy5ugqrMqnaWAwCLZH3kfMUa02rLISbZVQBJMLuETge1I2nmJxVbT9oBmIAC9QFeJkkYUjafhHh4UVJ20HRsil2haZiqqCTFvHuUH4cdabpEDXGBVmHewvtHc2CPECMzRtrNs97cxOFIgGZgACII4j7/Pi3LYAMbWUAMSjAAhjnBIXEZg5rlk24BKG4v1dLSbBbBuMo77OYEyIA4MRk8Z4qtaRmVnkAmZCZx0jpPGPuqWzloYuFUcuSCcEjgS2Bz5inLpleGDDbMH22zn94gfTwmKV5HwtgqC2tWVtKst6whlSJErG7BkA8Eg48flU/rGB3QWXIZRIIwSAJwcHryfGnaux6tVYudqlTk9xt2QComBBII29AekGbUaq3cLsFGx1K7VQlQWUAsu8AlpE8xkY4rnJs5RUbS+pC2nU5VjxuVhAnIBHrDiM8EdT4VSu9qXbd7dJcN3TGI8wICjPUeFRGy9sFpcWwDgRHMSQGx3cdOav3LSNbUl7pD7WDCMzDgDBggcija87nKPrYq6kXfXBmRoJXdKHgGMGAM/jSXU+suBVZgQcqWJK8+yJz7q5o9Ml3cC/rGVoIYgEESPZ9wHJzFTJ2GU9k97acYIPM4E+cc88jNGUl7pixi/QYs6gbQuwMQOrHex8gQQenLUP12m1BuFrakLtwFIaMSdwBgHmPdVZezS3fS4LY9n2SZIggCCdo7x9omM1auX7iDFz1oHJ9WAR45DEAAcMRPkalqlF7UymmLW6aK2mNz1Wq3uWnSXIyYPs9D1GaxNjTqzSXCj3fn6TxWz0mrVk1aozf8A4twgFQoELbB48xPTnxmh+g09m3b7qesu7jF1j3VQqMLb6kye8R1rbhctO6MWfSpbMD3ey7wQXWVhb+wxwpHPdJOZz5TUL6RgZADgqCSIgGMgjk9a3naWlbU21e6zLsXuuWmBgxkQBkYj3eFZi3pe6GuNAOfLMYHl760Qprd7/HBnnrVNLb55Hdn6nCspbYvKBysjyx900j2iAWuu1yVYogwY5BnM/L/tDrrqohNszzBXp5kHp+eKAtqHYEE4FGSijoOT8mt7H11y7vMFUiATgGcYkRiD7prZ6Ds31wQ3TJUQrYVlE49kZg+M1iuwriLpkdpEbpIYqYDzGORk9KKdlek2nXcNjggxJYkN5n3EAcfyoT06fkfFq1/AOt9mPptVes3MhipVhncktBgcZ5HTPka0/Z2tt2xv3yqkgiCTggcRP9KA9u9oi5qLeQAqmI8nI491cXXMUj1mCRMDkHaeZx8vGmj+36iT2nfrgIelNhrt5fVBV0791hgEFdj4HIG7AEY2nyFHfRs3LYS0mEmQORJMnmSMkmsXZ7SRZ9YYRWG0kkkmPrwfDmrP62txrYtMwBlhAJ4B6ST048xSSUI42mrHU5yyJp0a304skEXBc720FkBjwUECJ5IHPTpFC+xtPbvNbuXnLLbkFSZnMge6cn3CtL2xpLZ0SG93brlVG5t0ODHI4hQ0+HXNc7M7OsWhtaM8/n41485VJUuD0klK7BPpQNEbLm1vFw90CcEkHJB6CPrXnum1i25BJAnwkfn41rP0haqxbVLdrDFm3z4RiPLvA/Cscu5tvKgjziATkdDM/SvRwuTSb+5hy1bon11+y6khlnx2wfrQovuGDx+eau67s71YDq4bxAIInMcHrVTUIA+D3WyM8Tn7iK0Mgh+n1TKCu3Dc4kjI46j+tXbN1I7ysTPMf0oa9ojIYHPxFWfVXPD60tXwE0FztCYF22wySEyAAOsZB4nM1Z0updphAFEDievicAZjgcV2lXlvg9ePKJLzX0IaBkDAIjruOSJwZmfCrB1ewMZDtiMbVGQDMH3ZPnnNKlSJ2UaoB9o6t3PJ5mF5I2nE/ZGZ6fIzV+xpAm0EITJJPMGIXbIk9MmevWu0q0S2WxCO7dga7rDccx7LEfsgpJaGE8cz16zNGzdDIXuB0DDghlbbJzIkj5A5rlKhk2o7HvZMtwhFiY2jYYBPXO7mSvd++m6S2QFO4twdkgxAEkkHumSJFcpUq4HfJb7Q07XFcNtk4gkwTzB2Hdt8+KzCteSFV+4hghYaADGJ4kiPjjoKVKjFnTSNFqmtMrBz3CBAyrCGMhmBkEgeEjHjiPRXzdRlS2QqPtUho3EQR0JEj5z44pUqTwd5LLKwuLcXYFDw3dyyDxaeZEHgSvmaH6nXAnuvBWJ70kGBOT5g0qVdGKbC3RFY7UV9zBXuMCRszt7pMEYgzzMiqllXZtwJS22dhywnBUhpG09ATilSqkeWQk3SC3Y3Zob19sQC9i4gIAO0MVHEjx8TPlUo7HtpstpdaQsFiojhR7MtifoKVKtGNujLm/cHtfrVWO7adVAUbg6iIySAApOJ+NZzV6a1daWO9o+y5USQ2FUjAwo/zdYMKlVMcVHgnKTnSYP1Pom87hdthWZvV7+NgIjrkwwnwjPSs12h2Q1u4lrerFyQCPZnds58yJ9xFKlR1ts6kuAp2fobly21hED+qksQwmSQ3dXlogzExAoHctOhIIMAmlSoOT1V8I5cnW1DuwM5AwefE9Klt3TOeR4fD+lKlTs4l1AV1jEzPHlkfOudnOUIKMRzn+vxpUqnL9o0OT0jR6g6mzZ3u7m3cZmO4KVJJAgQZgBffJnJoh2lflgJilSqOOKspKTowPpaRcvwZAVcHxkx+FDWbaqZnEGQO7n356/SlSrTHlGd8C3qeQCR1GPuqs6bhAImTnp1aJ8eflXKVUYqOerYDifdk9OlWtN2gVXbMx9PKuUqRBP/2Q==" alt="">
+        </div>
+    </div>
+        <div>
+            <article>
+            <h4 style="text-align: center;  font-style: italic;">Acerca de nosotros</h4>
+            <p style="width: 80%; margin-left: 10%; text-align: center;">Una agencia de viajes especializada en destinos internacionales,
+                 que ofrece una amplia gama de servicios para viajeros aventureros 
+                 y de negocios. Con sede en una ubicación estratégica, la agencia
+                  cuenta con un equipo de expertos en viajes que brindan asesoramiento
+                   personalizado y paquetes completos que incluyen vuelos, alojamiento,
+                    transporte terrestre, actividades y tours guiados. Su objetivo es 
+                    ofrecer experiencias únicas y memorables, facilitando la exploración 
+                    de diferentes culturas, paisajes y atracciones alrededor del mundo.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="id_lugares" style="width: 100%; height: 930px; background: white; text-align: center; ">
+        
+
+        <div  style="display: flex; justify-content: space-between; margin-left: 5%; width:90%; height:300px; margin-bottom: 10px; "> 
+            <div style="border-radius: 5px;  border: 2px solid; background: white; width: 29%; height: 100%; ">
+                <a href="Destinos/Machupicchu.html"><img  src="img/machu.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </a>
+                </div>
+            <div style=" border-radius: 5px; border: 1px solid rgba(53, 79, 145, 0.75); width: 20%; height: 100%;">
+                <div style="height: 20%;"><h3 style="padding-top: 16px;">Machu Picchu, Perú</h3></div>
+                <div style="height: 60%;"><p style="width: 90%; margin-left: 5%;">
+                    
+                    Descubre la majestuosidad de Machu Picchu, una maravilla del mundo antiguo
+                    que te dejará sin aliento. Sumérgete en la historia de los incas y disfruta 
+                    de sus paisajes impresionantes...</p>
+                </div>
+
+                <div style="height: 20%;">
+                <button style="border-radius: 10px; width: 75%; height: 50px; font-size: 20px; font-weight: bold;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div >
+                            Reserva aquí
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div>
+                                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                      </svg></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                
+            </div>
+            
+            <div style="border-radius: 5px;  border: 2px solid; background: white; width: 29%; height: 100%; ">
+                <a href="Destinos/Petra.html"><img  src="img/petra.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </a>
+            </div>
+            <div style=" border-radius: 5px; border: 1px solid rgba(53, 79, 145, 0.75); width: 20%; height: 100%;">
+                <div style="height: 20%;"><h3 style="padding-top: 16px;">Petra, Jordania</h3></div>
+                <div style="height: 60%;"><p style="width: 90%; margin-left: 5%;">
+                    Descubre la enigmática Petra en Jordania, una ciudad antigua esculpida en roca que
+                         te transportará a otra época. Déjate sorprender por el Tesoro, 
+                        una maravilla arquitectónica tallada en la roca...
+                     </p>
+                </div>
+
+                <div style="height: 20%;">
+                <button style="border-radius: 10px; width: 75%; height: 50px; font-size: 20px; font-weight: bold;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div >
+                            Reserva aquí
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div>
+                                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                      </svg></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                
+            </div>
+
+            
+    </div>
+
+
+        <div  style="display: flex; justify-content: space-between; margin-left: 5%; width:90%; height:300px; margin-bottom: 10px; ">
+            <div style="border-radius: 5px;  border: 2px solid; background: white; width: 29%; height: 100%; ">
+                <a href="Destinos/Chichen.html"><img  src="img/chichen.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </a>
+            </div>
+            <div style=" border-radius: 5px; border: 1px solid rgba(53, 79, 145, 0.75); width: 20%; height: 100%;">
+                <div style="height: 20%;"><h3 style="padding-top: 16px;">Chichen Itzá, México</h3></div>
+                <div style="height: 60%;"><p style="width: 90%; margin-left: 5%;">
+                    
+Explora la grandeza de Chichen Itzá, una joya de la civilización maya que te fascinará.
+ Déjate sorprender por la majestuosidad 
+de la pirámide de Kukulcán, una maravilla arquitectónica que desafía el tiempo...</p>
+                </div>
+
+                <div style="height: 20%;">
+                <button style="border-radius: 10px; width: 75%; height: 50px; font-size: 20px; font-weight: bold;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div >
+                            Reserva aquí
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div>
+                                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                      </svg></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                
+            </div>
+            
+            <div style="border-radius: 5px;  border: 2px solid; background: white; width: 29%; height: 100%; ">
+                <a href="Destinos/Acropolis.html"><img  src="img/acropolis.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </a>
+            </div>
+            <div style=" border-radius: 5px; border: 1px solid rgba(53, 79, 145, 0.75); width: 20%; height: 100%;">
+                <div style="height: 20%;"><h3 style="padding-top: 16px;">La Acrópolis, Grecia</h3></div>
+                <div style="height: 60%;"><p style="width: 90%; margin-left: 5%;">
+                    Embárcate en un viaje a la cuna de la civilización occidental y descubre la Acrópolis de Atenas,
+                     un símbolo de la grandeza de la antigua Grecia. Contempla el Partenón, templo dedicado a 
+                     la diosa Atenea... 
+                     </p>
+                </div>
+
+                <div style="height: 20%;">
+                <button style="border-radius: 10px; width: 75%; height: 50px; font-size: 20px; font-weight: bold;">
+                    <div style="display: flex; justify-content: space-around;">
+                        <div >
+                            Reserva aquí
+                        </div>
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <div>
+                                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                      </svg></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </button>
+                </div>
+                
+            </div>
+
+            
+    </div>
+
+    <div  style="display: flex; justify-content: space-between; margin-left: 5%; width:90%; height:300px; margin-bottom: 10px; ">
+        <div style="border-radius: 5px;  border: 2px solid; background: white; width: 29%; height: 100%; ">
+            <a href="Destinos/Reserva.html"><img  src="img/rioclaro.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+        </div>
+        <div style=" border-radius: 5px; border: 1px solid rgba(53, 79, 145, 0.75); width: 20%; height: 100%;">
+            <div style="height: 20%;"><h3 style="padding-top: 16px;">Reserva Río Claro, Colombia</h3></div>
+            <div style="height: 60%;"><p style="width: 90%; margin-left: 5%;">
+                Descubre la belleza natural de Reserva Río Claro en Antioquia, Colombia, un paraíso escondido 
+                que te cautivará. Sumérgete en aguas cristalinas mientras exploras las majestuosas cuevas y 
+                cañones de este lugar único... </p>
+            </div>
+
+            <div style="height: 20%;">
+            <button style="border-radius: 10px; width: 75%; height: 50px; font-size: 20px; font-weight: bold;">
+                <div style="display: flex; justify-content: space-around;">
+                    <div >
+                        Reserva aquí
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div>
+                                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                  </svg></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                </button>
+            </div>
+            
+        </div>
+        
+        <div style="border-radius: 5px; border: 2px solid; background: white; width: 29%; height: 100%; ">
+            <a href="Destinos/Piramides.html"><img  src="img/giza.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+            </a>
+        </div>
+        <div style=" border-radius: 5px; border: 1px solid rgba(53, 79, 145, 0.75); width: 20%; height: 100%;">
+            <div style="height: 20%;"><h3 style="padding-top: 16px;">Las Pirámides de Giza, Egipto</h3></div>
+            <div style="height: 60%;"><p style="padding-top: 15px; width: 90%; margin-left: 5%;">
+                Descubre la grandiosidad de las Pirámides de Giza en Egipto, una maravilla del mundo 
+                antiguo que perdura en el tiempo. Contempla la majestuosidad de la Gran Pirámide de Keops...
+            
+            </p>
+            </div>
+
+            <div style="height: 20%;">
+            <button style="border-radius: 10px; width: 75%; height: 50px; font-size: 20px; font-weight: bold;">
+                <div style="display: flex; justify-content: space-around;">
+                    <div >
+                        Reserva aquí
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div>
+                                <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                  </svg></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                </button>
+            </div>
+            
+        </div>
+
+        
+</div>
+
+</section>
+</main>
+<footer style="background: #0f172b; text-align: center; color: white; font-size: 17px; margin: 2px; 
+border-radius: 10px; margin-top: 32px;">
+ <div style="display: flex; justify-content: space-around; height: 200px;">
+    <div style="width: 25%; height: 200px; margin-top: 25px; ">
+        <h3>Travel Partners</h3><br>
+        <a style="color: white;" href=""  >About Us</a> <br>
+        <a style="color: white;"  href="" style="font-size: 16px;">Contact Us</a><br>
+        <a style="color: white;"  href="" >Reservation</a><br>
+        <a style="color: white;"  href="" >Privacy Policy</a><br>
+        <a style="color: white;"  href="" >Teams & Condiciones</a><br>
+    </div>
+
+    <div style="width: 25%; height: 200px; margin-top: 25px;">
+        <h3 >Contacto </h3> <br>
+        <p > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg> cra 27b # 95 - 75, Pto Berrío, Antioquia</p><br>
+        <p ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+          </svg> +302 543 3232</p><br>
+        <p ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+          </svg> info@travel.com</p>
+        <div class="d-flex pt-2">
+            <a href="" style="border-radius: 0 !important;" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+            <a href="" style="border-radius: 0 !important;" class="btn btn-outline-light btn-social"><i class="fab fa-facebook-f"></i></a>
+            <a href="" style="border-radius: 0 !important;" class="btn btn-outline-light btn-social"><i class="fab fa-instagram"></i></a>
+            <a href="" style="border-radius: 0 !important;" class="btn btn-outline-light btn-social"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div style="width: 25%; height: 200px; margin-top: 25px;">
+
+        <div class="">
+            <h3 >Horario de atención </h3><br>
+            <h5 >Lunes - sabado</h5>
+            <p>9:00AM - 3:00PM </p> <br>
+            <h5 >Domingos</h5>
+            <p>9:00AM - 02:00PM </p>
+        </div>
+    </div>
+ </div>
+
+ <div style="display: flex; justify-content: space-between; color: white;">
+ <div style="width: 50%; background: black;  text-align: center; font-size: 1vw; padding-top: 16px; padding-bottom: 10px;">
+    Sitio Agencia Travel Partner desarrollado por Juan Pablo Pinzón C
+ </div>
+ <div style="width: 50%; background: black;  text-align: center; font-size: 1vw; padding-top: 16px; padding-bottom: 10px;">
+ contacto: +57 310 581 5791 - juanpapinzonc@gmail.com
+ </div>
+</div>
+</footer>
+</body>
+</html>
+</body>
+</html>
